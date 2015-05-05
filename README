@@ -1,0 +1,6 @@
+=======================
+thecut.imagechoicefield
+=======================
+
+Allows use of a dictionary with 'image' and 'description' keys as the label on
+field choices.

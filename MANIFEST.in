@@ -1,0 +1,4 @@
+include RELEASE-VERSION
+include README
+graft thecut/imagechoicefield/static
+graft thecut/imagechoicefield/templates
