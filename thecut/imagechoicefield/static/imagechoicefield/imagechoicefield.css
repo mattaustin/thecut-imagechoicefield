@@ -1,0 +1,26 @@
+.imagechoicefield li {
+  display: inline-block;
+  position: relative;
+  width: 20%;
+  padding-right: 2%;
+  vertical-align: top;
+}
+
+.imagechoicefield label,
+.imagechoicefield img {
+  display: block;
+  cursor: pointer;
+  width: 100%;
+}
+
+.imagechoicefield input {
+  margin-right: 0.25em;
+}
+
+.imagechoicefield img {
+  border: 2px solid transparent;
+}
+
+.imagechoicefield .selected img {
+  border-color: #41cbef;
+}
