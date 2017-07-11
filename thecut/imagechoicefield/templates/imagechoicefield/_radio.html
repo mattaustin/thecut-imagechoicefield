@@ -1,7 +1,0 @@
-{% load staticfiles %}{% spaceless %}<ul class="imagechoicefield">{% for group_name, choices in optgroups %}{% for choice in choices %}
-  <li><label for="{{ attrs.id }}_{{ forloop.counter }}">
-    {% if choice.1.image %}<img src="{% static choice.1.image %}"{% if choice.1.description %}alt="{{ choice.1.description }}"{% endif %} />{% endif %}
-    <input type="radio" id="{{ attrs.id }}_{{ forloop.counter }}" value="{{ choice.0 }}" name="{{ name }}"{% if required %} required{% endif %}{% if choice.0 in value %} checked{% endif %}>
-    {% if choice.1.description %}<span class="description">{{ choice.1.description }}</span>{% endif %}
-  </label></li>
-{% endfor %}{% endfor %}{% endspaceless %}</ul>
