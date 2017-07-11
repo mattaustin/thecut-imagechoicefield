@@ -1,0 +1,6 @@
+{% load staticfiles %}
+{% if wrap_label %}<label{% if widget.attrs.id %} for="{{ widget.attrs.id }}"{% endif %}>{% endif %}
+  {% if widget.label.image %}<img src="{% static widget.label.image %}"{% if widget.label.description %}alt="{{ widget.label.description }}"{% endif %} />{% endif %}
+  {% include "django/forms/widgets/input.html" %}
+  {% if widget.label.description %}<span class="description">{{ widget.label.description }}</span>{% endif %}
+{% if wrap_label %}</label>{% endif %}
